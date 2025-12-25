@@ -1,0 +1,110 @@
+#education {
+  background-color: #030712;
+  padding: 10rem 0;
+
+  .education-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    padding-right: 40px; // Space for the line on the right
+
+    // Vertical line on the right (Timeline)
+    &::after {
+      content: '';
+      position: absolute;
+      right: 15px;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: #fff;
+    }
+  }
+
+  .education-card {
+    position: relative;
+    margin-bottom: 30px;
+    background: rgba(17, 24, 39, 0.4);
+    border: 1px solid #3b82f6; // Blue border like image
+    border-radius: 15px;
+    padding: 2.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      background: rgba(17, 24, 39, 0.6);
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    }
+  }
+
+  .edu-main {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  .edu-logo {
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      background: #fff;
+      padding: 5px;
+      border-radius: 8px;
+    }
+  }
+
+  .edu-info {
+    flex: 1;
+    text-align: left;
+
+    .edu-college {
+      font-size: 1.8rem;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .edu-degree {
+      font-size: 1.4rem;
+      color: #94a3b8;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .edu-date {
+      font-size: 1.2rem;
+      color: #64748b;
+      margin-bottom: 15px;
+    }
+
+    .edu-grade {
+      font-size: 1.4rem;
+      color: #3b82f6; // Blue color for Grade
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .edu-details {
+      font-size: 1.3rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+  }
+
+  // Circle on the timeline
+  .edu-dot {
+    position: absolute;
+    right: -32px; // Aligning with the vertical line
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: #030712;
+    border: 2px solid #a855f7; // Purple/Pink circle like image
+    border-radius: 50%;
+    z-index: 2;
+  }
+}

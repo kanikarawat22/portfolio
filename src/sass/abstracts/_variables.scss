@@ -1,15 +1,24 @@
-// COLORS
-$primary-color: #02aab0;
-$secondary-color: #00cdac;
+// Cleaned Up Dark Theme Variables
 
-$white-color: #fff;
+// 1. Map new colors to template defaults
+$primary-color: #3b82f6;    
+$secondary-color: #1e3a8a;  
+$white-color: #f8fafc;      
+$dark-blue-text: #0f172a;   
 
-$dark-grey: #333333;
-$light-grey: #d2d2d2;
+// --- ADD THESE TWO LINES TO FIX THE ERRORS ---
+$light-grey: #030712;       // This stops the "Undefined variable" error
+$dark-grey: #333333;        // Adding this just in case
+// ---------------------------------------------
 
-$dark-blue-text: #272341; // For Headings
-
-// FONT SIZE
+// 2. Keep standard sizes
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
+
+// 3. Your New Custom Variables
+$main-color: #3b82f6; 
+$background-dark: #030712; 
+
+// 4. The Gradient
+$gradient: linear-gradient(135deg, $main-color 0%, $secondary-color 100%);

@@ -16,3 +16,51 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
+@import "./sass/sections/skills";
+@import "./sass/sections/experience";
+
+@import "./sass/sections/projects";
+@import "./sass/sections/education";
+@import "./sass/sections/contact";
+@import "./sass/sections/footer";
+// --- PASTE THE NEW CODE BELOW THIS LINE ---
+
+.custom-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(3, 7, 18, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+
+    a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      &:hover { color: #3b82f6; }
+    }
+  }
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #3b82f6;
+  text-decoration: none;
+}
+

@@ -1,5 +1,7 @@
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px
+  overflow-x: hidden; // Prevents horizontal scroll bugs on mobile
+  scroll-behavior: smooth;
 
   &.sr .load-hidden {
     visibility: hidden;
@@ -8,21 +10,49 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #030712; // Solid dark background
+  color: #fff;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* Scrollbar */
+// THE FIX: This container makes sure your content stretches on laptop 
+// but stays centered and neat.
+.container {
+  width: 100%;
+  max-width: 1140px; // Standard laptop width
+  margin: 0 auto;
+  padding: 0 2rem; // Side padding so text doesn't touch phone edges
+  
+  @media (max-width: 1200px) {
+    max-width: 90%; // Tablet/Small Laptop
+  }
+  
+  @media (max-width: 600px) {
+    padding: 0 1.5rem; // Mobile
+  }
+}
+
+/* Scrollbar - Modern Dark Style */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #030712;
 }
 ::-webkit-scrollbar-thumb {
-  background: $light-grey;
+  background: #3b82f6; // Blue thumb to match your theme
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: $primary-color;
+  background: lighten(#3b82f6, 10%);
+}
+
+// Global Image fix
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -16,9 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>[Kanika Rawat] | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -40,306 +40,438 @@
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
 
-    <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
-          <br />
-          I'm the Unknown Developer.
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
-          >
-        </p>
-      </div>
-    </section>
-    <!-- /END Hero Section -->
-
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
-              </p>
-              <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
-              </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
-                >
-                  View Resume
-                </a>
-              </span>
-            </div>
+    <nav class="navbar custom-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">KR</a> 
+    <ul class="nav-links">
+      <li><a href="#hero">About</a></li> 
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+    <a href="https://github.com/kanikarawat22" target="_blank" rel="noreferrer" class="github-nav-btn">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </li>
+    </ul>
+  </div>
+</nav>
+<!-- About Section -->
+<section id="hero" class="jumbotron">
+  <div class="container">
+    <div class="hero-wrapper">
+      
+      <div class="hero-info">
+        <div class="hero-text-content">
+          <h1 class="hero-title">
+            Hi, I am <br />
+            <span class="text-color-main">Kanika Rawat</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I am a <span class="blue-text">Software Developer</span>
+          </h2>
+          <p class="hero-description">
+            A passionate Software Engineer with an insatiable curiosity for building seamless digital experiences. I specialize in the Android and Java Full-Stack ecosystem, driven by the challenge of connecting robust Spring Boot Microservices with high-performance mobile applications. With a heart for innovation and a disciplined approach to code, I am devoted to staying at the forefront of technology—crafting solutions that are as efficient as they are impactful.
+          </p>
+          <div class="hero-cta">
+            <a class="cta-btn cta-btn--resume" href="assets/resume.pdf">Check Resume</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
-                <div>
-                  <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
-                <div>
-                  <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
+      <div class="hero-image">
+        <div class="profile-img-container">
+          <img src="assets/profile.jpg" alt="Kanika Rawat" />
         </div>
       </div>
-    </section>
-    <!-- /END Projects Section -->
+
+    </div>
+  </div>
+</section>
+    <!-- About Section -->
+
+    <!-- **** Skill  Section **** -->
+    <section id="skills">
+  <div class="container">
+    <h2 class="section-title"> Skills</h2>
+    
+    <div class="skills-grid-wrapper">
+      <div class="skill-card">
+        <h3 class="card-title">Java Development</h3>
+        <div class="skill-pills">
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" /> Java</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" /> Spring Boot / MVC</div>
+          <div class="pill">JSP / Servlets</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" /> Hibernate / JPA</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" /> PostgreSQL</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" /> Kafka</div>
+          <div class="pill">Keycloak</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style="filter: hue-rotate(150deg);" /> Lombok</div>
+          <div class="pill"><img src="https://img.icons8.com/color/48/api-settings.png" /> RESTful APIs</div>
+          <div class="pill">Eureka</div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3 class="card-title">Mobile Development</h3>
+        <div class="skill-pills">
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" /> Kotlin</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" /> Java</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" /> Flutter</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" /> Android Studio</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" /> Android SDK</div>
+          <div class="pill"><img src="https://img.icons8.com/color/48/android-os.png" /> Jetpack Components</div>
+          <div class="pill"><img src="https://img.icons8.com/color/48/flow-chart.png" /> MVVM</div>
+          <div class="pill"><img src="https://img.icons8.com/color/48/process.png" /> Coroutines</div>
+          <div class="pill"><img src="https://img.icons8.com/color/48/xml-transformer.png" /> XML Layouts</div>
+          <div class="pill"><img src="https://img.icons8.com/color/48/cloud-sync.png" /> Retrofit</div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3 class="card-title">Databases</h3>
+        <div class="skill-pills">
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" /> Hibernate / JPA</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" /> MySQL</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" /> PostgreSQL</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" /> SQLite</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" /> Firebase SDK</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" /> Realm / MongoDB</div>
+          <div class="pill">JDBC</div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3 class="card-title">Other skills & Tools</h3>
+        <div class="skill-pills">
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /> Git / GitHub</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" /> VS Code</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" /> Eclipse</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" /> Docker Compose</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" /> Microsoft Azure</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg" /> Apache Tomcat</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" /> Postman</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" /> Figma</div>
+          <div class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /> Python</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- **** Skill Section **** -->
+
+<!-- **** Expericne Section **** -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="https://img.icons8.com/color/96/android-os.png" alt="Android Logo" />
+            </div>
+            <div class="exp-title-group">
+              <h3 class="exp-role">Software Engineer Intern</h3>
+              <h4 class="exp-company">BookMyDoc | <span class="exp-date">Aug 2025 - Present</span></h4>
+            </div>
+          </div>
+          <div class="exp-content">
+            <ul class="exp-points">
+              <li>Engineered a comprehensive doctor appointment platform using <strong>Java, Kotlin,</strong> and <strong>Android Studio</strong>.</li>
+              <li>Implemented advanced features including <strong>online consultation scheduling, video calling,</strong> and <strong>real-time push notifications</strong> via Firebase.</li>
+              <li>Secured user data by integrating <strong>Firebase Authentication</strong> and utilized <strong>Cloud Firestore</strong> for low-latency, real-time data synchronization.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="AI Logo" />
+            </div>
+            <div class="exp-title-group">
+              <h3 class="exp-role">AI & ML Intern</h3>
+              <h4 class="exp-company">Infosys Springboard | <span class="exp-date">Aug 2025 – Oct 2025</span></h4>
+            </div>
+          </div>
+          <div class="exp-content">
+            <ul class="exp-points">
+              <li>Developed <strong>"Heart Shield"</strong>, an intelligent heart disease detection system leveraging <strong>Python</strong> and <strong>TensorFlow</strong>.</li>
+              <li>Architected automated <strong>ML pipelines</strong> and integrated <strong>OCR technology</strong> to process medical reports.</li>
+              <li>Deployed the solution via <strong>Flask APIs</strong>, incorporating <strong>SQLite</strong> for data management and Firebase for secure access.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="https://img.icons8.com/color/96/manufacturing.png" alt="Industrial Logo" />
+            </div>
+            <div class="exp-title-group">
+              <h3 class="exp-role">Operational Engineer Trainee</h3>
+              <h4 class="exp-company">Mahindra & Mahindra Pvt. Ltd | <span class="exp-date">Sept 2022 – Sept 2023</span></h4>
+            </div>
+          </div>
+          <div class="exp-content">
+            <ul class="exp-points">
+              <li>Optimized <strong>SAP MM/PP</strong> processes, managing Bill of Materials (BOM) and material master governance for production efficiency.</li>
+              <li>Led process engineering change management for new product launches and industrial modifications.</li>
+              <li>Performed rigorous <strong>ERP data validation</strong> and reporting to ensure 100% accuracy in operational data.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="https://img.icons8.com/color/96/settings.png" alt="Tech Ops Logo" />
+            </div>
+            <div class="exp-title-group">
+              <h3 class="exp-role">Intern – Technical Operations</h3>
+              <h4 class="exp-company">Mahindra & Mahindra Pvt. Ltd | <span class="exp-date">Sept 2021 – Sept 2022</span></h4>
+            </div>
+          </div>
+          <div class="exp-content">
+            <ul class="exp-points">
+              <li>Facilitated <strong>SAP data entry</strong> and material master creation to support large-scale manufacturing workflows.</li>
+              <li>Assisted in production planning and executed strict <strong>data quality checks</strong> to minimize operational errors.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- **** Expericence Section **** -->
+
+
+ <!-- **** Project Section **** -->
+   <section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      
+  <div class="project-card">
+  <div class="project-content-container">
+    <div class="project-text-side">
+      <h3 class="project-title">Smart Email Assistant</h3>
+      <p class="project-desc">
+        A full-stack AI tool developed to generate tone-specific email replies. Built a Manifest V3 Chrome extension for direct Gmail integration and a React app for localized testing.
+      </p>
+    </div>
+    
+    <div class="project-image-side">
+      <img src="https://i.pinimg.com/736x/12/17/48/121748d1ce585ae739c640cc721a1538.jpg" alt="Email Assistant Preview" />
+    </div>
+  </div>
+
+  <div class="project-footer">
+    <div class="project-tech">
+      <span>Java</span> <span>Spring Boot</span> <span>Gemini API</span> <span>Chrome Extension</span> <span>React</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/kanikarawat22/smart-email-assistant" target="_blank" rel="noreferrer" class="cta-btn cta-btn--project">Source Code</a>
+    </div>
+  </div>
+</div>
+
+      <div class="project-card">
+  <div class="project-content-container">
+    <div class="project-text-side">
+      <h3 class="project-title">Online Shop Microservices</h3>
+      <p class="project-desc">
+         A distributed e-commerce platform featuring modular services for product, order, and inventory management. Optimized for scalable performance and automated containerized deployment.
+      </p>
+      </p>
+    </div>
+    
+    <div class="project-image-side">
+      <img src="https://i.pinimg.com/1200x/64/ba/0e/64ba0e00b30d71c8f7dc79a9bb33e787.jpg" alt="Microservices Architecture Preview" />
+    </div>
+  </div>
+
+  <div class="project-footer">
+    <div class="project-tech">
+      <span>Spring Cloud</span> <span>Kafka</span> <span>Docker</span>   <span>Keycloak</span> <span>MongoDB</span> <span>MySQL</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/kanikarawat22/microservice-springboot-project" target="_blank" rel="noreferrer" class="cta-btn cta-btn--project">Source Code</a>
+    </div>
+  </div>
+</div>
+
+      <div class="project-card">
+  <div class="project-content-container">
+    <div class="project-text-side">
+      <h3 class="project-title">Financify</h3>
+      <p class="project-desc">
+        A personal finance tracker designed for real-time data synchronization and seamless offline persistence. Includes visual spending analytics with a responsive, high-performance user interface.
+      </p>
+    </div>
+    
+    <div class="project-image-side">
+      <img src="https://i.pinimg.com/1200x/48/1e/64/481e6469b5a45639e95ba5f9b13854c7.jpg" alt="Financify App Preview" />
+    </div>
+  </div>
+
+  <div class="project-footer">
+    <div class="project-tech">
+      <span>Kotlin</span> <span>Firebase</span> <span>Room DB</span> <span>MPAndroidChart</span> <span>Material Design</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/kanikarawat22/Financify-App" target="_blank" rel="noreferrer" class="cta-btn cta-btn--project">Source Code</a>
+    </div>
+  </div>
+</div>
+
+      <div class="project-card">
+  <div class="project-content-container">
+    <div class="project-text-side">
+      <h3 class="project-title">7MinWorkout App</h3>
+      <p class="project-desc">
+        A native fitness application featuring timer-based exercise routines, an integrated BMI calculator, and automated workout history tracking for a stable user experience.
+      </p>
+    </div>
+    
+    <div class="project-image-side">
+      <img src="https://i.pinimg.com/736x/24/47/1d/24471d21617e0152574024c1de40355e.jpg" alt="7MinWorkout App Preview" />
+    </div>
+  </div>
+
+  <div class="project-footer">
+    <div class="project-tech">
+      <span>Kotlin</span> <span>SQLite</span> <span>Room DB</span> <span>Jetpack Compose</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/kanikarawat22/7MinWorkoutApp" target="_blank" rel="noreferrer" class="cta-btn cta-btn--project">Source Code</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+ <!-- **** Project Section **** -->
+
+
+ <!-- **** Eduction Section **** -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-wrapper">
+      
+      <div class="education-card">
+        <div class="edu-main">
+          <div class="edu-logo">
+            <img src="https://www.birlainstitute.co.in/Pictures/birla-logo.png" alt="BIAS Logo" />
+          </div>
+          <div class="edu-info">
+            <h3 class="edu-college">Birla Institute of Applied Sciences, Bhimtal</h3>
+            <p class="edu-degree">Bachelor of Technology - BTech, Computer Science and Engineering</p>
+            <p class="edu-date">Sept 2023 - July 2026</p>
+            <p class="edu-grade">CGPA: 8.0 </p>
+            <p class="edu-details">
+              I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Birla Institute of Applied Sciences, Bhimtal. I have completed 6 semesters and have a CGPA of 8.0
+            </p>
+          </div>
+        </div>
+        <div class="edu-dot"></div>
+      </div>
+
+      <div class="education-card">
+        <div class="edu-main">
+          <div class="edu-logo">
+            <img src="https://cache.careers360.mobi/media/colleges/social-media/logo/logo_TcwEu0s.jpg" alt="School Logo" />
+          </div>
+          <div class="edu-info">
+            <h3 class="edu-college">Govt. Polytechnic College, Dwarahat</h3>
+            <p class="edu-degree">Diploma in Computer Science and Engineering</p>
+            <p class="edu-date">Aug 2017 - Aug 2020</p>
+            <p class="edu-grade">CGPA: 7.5 </p>
+            <p class="edu-details">
+              Completed my diploma with a focus on computer hardware, networking, and core programming fundamentals.
+            </p>
+          </div>
+        </div>
+        <div class="edu-dot"></div>
+      </div>
+
+      <div class="education-card">
+        <div class="edu-main">
+          <div class="edu-logo">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.-r1YgWRi9yv-qLbqiIgLHgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="School Logo" />
+          </div>
+          <div class="edu-info">
+            <h3 class="edu-college">Kumaon Public School, Dwarahat</h3>
+            <p class="edu-degree">CBSE(X), All India Secondary Examination</p>
+            <p class="edu-date">Apr 2016 - Mar 2017</p>
+            <p class="edu-grade">CGPA: 8.0 </p>
+            <p class="edu-details">
+              Completed secondary education with consistent academic performance.
+            </p>
+          </div>
+        </div>
+        <div class="edu-dot"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ <!-- **** Eduction  Section **** -->
+
 
     <!-- **** Contact Section **** -->
     <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-subtitle">I am currently seeking new opportunities and would love to hear from you.</p>
+    
+    <div class="contact-wrapper">
+      <form action="https://formspree.io/f/mpqaggqe" method="POST" class="contact-form">
+        
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
         </div>
-      </div>
-    </section>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="Your Email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="8" placeholder="Your Message" required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="New Portfolio Message from KanikaRawat.com" />
+
+        <div class="form-submit">
+          <button type="submit" class="cta-btn--submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
     <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
-      </div>
-    </footer>
-    <!-- /END Footer Section -->
-
-    <script defer type="module" src="index.js"></script>
-  </body>
-</html>
+ 
