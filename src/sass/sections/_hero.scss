@@ -49,14 +49,20 @@ html {
 
         /* Phone par links ko chota aur adjust karne ke liye */
         @media screen and (max-width: 768px) {
-            gap: 1.5rem; 
-            a { font-size: 1.2rem !important; }
+            gap: 2rem; 
+            overflow-x: auto; /* Side scroll enable */
+            white-space: nowrap; /* Links ko ek line mein rakha */
+            width: auto;
+            padding: 5px 0;
+            scrollbar-width: none; /* Hide scrollbar Firefox */
+            &::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome */
+            
+            a { font-size: 1.3rem !important; }
         }
 
-        /* Bahut chote phones ke liye gap aur kam */
         @media screen and (max-width: 480px) {
-            gap: 1rem;
-            .github-nav-btn { display: none; } /* Mobile par GitHub button hide kiya space bachane ke liye */
+            gap: 1.5rem;
+            .github-nav-btn { display: none; } 
         }
 
         a {
